@@ -1,5 +1,5 @@
 package com.example.diexamples.services;
 
-public interface Greeting {
-    String sayGreeting
+public interface GreetingService {
+    String sayGreeting();
 }
