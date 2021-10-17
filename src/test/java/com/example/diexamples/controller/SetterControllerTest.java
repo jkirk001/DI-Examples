@@ -1,10 +1,8 @@
 package com.example.diexamples.controller;
 
-import com.example.diexamples.services.GreetingServiceImpl;
+import com.example.diexamples.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SetterControllerTest {
 
@@ -13,7 +11,7 @@ class SetterControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new ConstructorGreetingService());
     }
 
     @Test
